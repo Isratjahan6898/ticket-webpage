@@ -31,7 +31,7 @@
 </style>
 </head>
 <body>
-    <header class="lg:mx-[50px] mt-[40px]">
+    <header id="header-div" class="lg:mx-[50px] mt-[40px]">
         <nav>
             <div class="navbar font-raleway bg-base-100">
                 <div class="navbar-start">
@@ -125,7 +125,7 @@
 
     </header>
 
-    <main>
+    <main id="main-div">
 
       
         <h1 class="text-center font-inter font-bold	text-6xl	mb-[30px]">Best Offer For You</h1>
@@ -272,26 +272,26 @@
     <div class="flex flex-col lg:flex-row gap-[50px] lg:gap-[300px] mx-[20px] mb-[20px] mt-[10px]">
       <div class="flex  gap-[15px] ">
         <div class="bg-slate-100 w-[80px]	p-[15px]">A</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">A1</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">A2</div>
+      <div id="A1"  class="select-btn  bg-slate-100 w-[80px] rounded-lg p-[15px]	">A1</div>
+      <div id="A2"  class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">A2</div>
       </div>
 
       <div class="flex gap-[15px]">
-        <div id="bg-change" class="select-btn bg-slate-100 w-[80px] p-[15px]">A3</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] p-[15px]">A4</div>
+        <div id="A3" class="select-btn bg-slate-100 w-[80px] p-[15px]">A3</div>
+      <div id="A4" class="select-btn bg-slate-100 w-[80px] p-[15px]">A4</div>
       </div>
     </div>
     <hr>
     <div class="flex flex-col lg:flex-row gap-[50px] lg:gap-[300px] mx-[20px] mt-[20px]">
       <div class="flex gap-[15px] ">
         <div class="bg-slate-100 w-[80px]	p-[15px]">B</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">B1</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">B2</div>
+      <div id="B1" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">B1</div>
+      <div id="B2" class="select-btn bg-slate-100 w-[80px] rounded-lg p-[15px]	">B2</div>
       </div>
 
       <div class="flex gap-[15px]">
-        <div id="bg-change" class="select-btn bg-slate-100 w-[80px] p-[15px]">B3</div>
-      <div id="bg-change" class="select-btn bg-slate-100 w-[80px] p-[15px]">B4</div>
+        <div id="B3" class="select-btn bg-slate-100 w-[80px] p-[15px]">B3</div>
+      <div id="B4" class="select-btn bg-slate-100 w-[80px] p-[15px]">B4</div>
       </div>
     </div>
 
@@ -311,30 +311,20 @@
               <th>price</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="select-container">
             <!-- row 1 -->
-            <tr class="bg-base-200">
-              
-              <td>A1</td>
-              <td>Economic</td>
-              <td>550</td>
-            </tr>
-            <!-- row 2 -->
-            <tr>
-              
-              <td>A2</td>
-              <td>Economic</td>
-              <td>550</td>
-            </tr>
+            
             <hr>
-            <td>total</td>
-            <td></td>
-            <td>1100</td>
-           
+            
             
           </tbody>
+
+          <td>total</td>
+            <td></td>
+            <td><span>0</span></td>
+           
         </table>
-        <div class="mt-[30px] mb-[20px]">
+        <div  class="mt-[30px] mb-[20px]">
           <input type="text" name="" class="w-[200px] h-[40px] rounded-lg" id="" placeholder="have you have copopun">
         <button class="bg-lime-300	p-[10px] rounded-lg">Apply</button>
 
@@ -342,12 +332,9 @@
 
         <div class="flex gap-[130px]">
           <h1 class="font-inter">Grand Total</h1>
-          <p>1000</p>
+          <p><span>0</span></p>
         </div>
-
-
-
-      </div>
+ </div>
        <div class="mt-[30px] mb-[20px]">
     <button onclick="showDivElement()" class=" w-[200px] lg:w-[300px] font-inter rounded-lg p-[20px] bg-lime-500">Next</button>
   </div>
@@ -360,6 +347,13 @@
 
 </div>
 
+
+          
+        
+      
+
+    </main>
+    
     <div id="showDiv" class="w-[750px] h-[480px] mx-[300px] mb-[200px] rounded-sm border-black	mt-[100px] hidden">
       <img src="images/success.png" class="ml-[320px]" alt="">
       <h1 class="text-center mt-[20px] font-bold	text-2xl font-raleway	text-lime-600	">Success</h1>
@@ -369,12 +363,9 @@
 
     </div>
 
-          
-        
-      
 
-    </main>
-<footer class="bg-black py-[20px]">
+
+<footer id="footer-div" class="bg-black py-[20px]">
   <footer class=" mx-[50px] lg:mx-[100px] mt-[130px]">
     <div class="flex flex-col lg:flex-row justify-between mb-[40px]">
       <div>
