@@ -319,24 +319,24 @@
             
           </tbody>
 
-          <td>total</td>
+          <td class="font-medium	">total Price</td>
             <td></td>
-            <td><span>0</span></td>
+            <td><span id="total-price">0</span></td>
            
         </table>
         <div  class="mt-[30px] mb-[20px]">
-          <input type="text" name="" class="w-[200px] h-[40px] rounded-lg" id="" placeholder="have you have copopun">
-        <button class="bg-lime-300	p-[10px] rounded-lg">Apply</button>
+          <input type="text" name="" class="w-[200px] h-[40px] rounded-lg" id="coupon-code" placeholder="have you have copopun">
+        <button onclick="updateGrandTotal(status)" class="bg-lime-300	p-[10px] rounded-lg">Apply</button>
 
         </div>
 
         <div class="flex gap-[130px]">
           <h1 class="font-inter">Grand Total</h1>
-          <p><span>0</span></p>
+          <p><span id="grand-total">0</span></p>
         </div>
  </div>
        <div class="mt-[30px] mb-[20px]">
-    <button onclick="showDivElement()" class=" w-[200px] lg:w-[300px] font-inter rounded-lg p-[20px] bg-lime-500">Next</button>
+    <button onclick=" showModal()" class=" w-[200px] lg:w-[300px] font-inter rounded-lg p-[20px] bg-lime-500">Next</button>
   </div>
     
 
@@ -354,14 +354,24 @@
 
     </main>
     
-    <div id="showDiv" class="w-[750px] h-[480px] mx-[300px] mb-[200px] rounded-sm border-black	mt-[100px] hidden">
-      <img src="images/success.png" class="ml-[320px]" alt="">
-      <h1 class="text-center mt-[20px] font-bold	text-2xl font-raleway	text-lime-600	">Success</h1>
-      <p class="mt-[20px] font-bold font-inter ml-[200px]">Thank you for Booking Our Bus Seats.<br> We are working hard to find the best service and deals for you.</p>
-      <p class="ml-[200px] mt-[15px] mb-[20px]">Shortly you will find a confirmation in your email</p>
-      <button class="bg-[#27AE60] font-inter rounded-lg ml-[220px] w-[300px] p-[10px]">Continue</button>
-
+    <!-- Open the modal using ID.showModal() method -->
+<div id="show-div" class="hidden mx-[300px]">
+ 
+  <div class="modal-box">
+    <img src="images/success.png" alt="" class="mx-[180px]" srcset="">
+    <h3 class="text-2xl	font-bold	text-lime-500	text-center">SUCCESS</h3>
+    
+    <p class="text-center text-xl	font-medium	text-slate-950	">Thank you for booking our bus seat.<br>We are working hard to find the best service and deals for you</p>
+    <p class="text-center text-gray-400	">Shortly you will find confirmation on your email</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="w-[300px] rounded-2xl text-white mr-[80px]	bg-lime-500 p-[8px]">continue</button>
+      </form>
     </div>
+  </div>
+</dialog>
+</div>
 
 
 
